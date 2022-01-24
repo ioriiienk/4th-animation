@@ -1,0 +1,213 @@
+*		{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: arial;
+}
+
+header	{
+	background: orange;
+	width: 1,;
+	height: 80px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav	{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav li	{
+	list-style-type: none;
+	display: inline;
+}
+
+.nav a	{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 150%;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: purple;
+	text-align: center;
+	color: white;
+	margin-left: 10px;
+	animation-name: link;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-fill-mode: both;
+}
+
+@keyframes link{
+	0%{
+		color: white;
+		background-color: purple;
+	}
+	35%{
+		color: black;
+		background-color: cyan;
+	}
+	70%{
+		color: black;
+		background-color: cyan;
+	}
+	100%{
+		color: white:
+		background-color: purple;
+	}
+}
+
+
+
+img		{
+	width: 50px;
+	height: auto;
+	position: absolute;
+	animation-name: profile;
+	animation-duration: 10s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	margin-top: -15px;
+}
+
+@keyframes profile{
+	0%{
+		left: 0.9%;
+	}
+	35%{
+		left: 95.3%;
+		transform: rotate(360deg);
+	}
+	70%{
+		left: 95.3%;
+		transform: rotate(360deg);
+	}
+	100%{
+		left: 15px;
+		transform: rotate(360deg);
+	}
+}
+
+main	{
+	background: violet;
+	width: 1,;
+	height: 500px;
+	position: relative;
+	padding: 15px;
+}
+
+.meter	{
+	background: white;
+	height: 30px;
+	width: 97.5%;
+	margin: 0 auto;
+	border-radius: 100px;
+	position: relative;
+	left: -15px;
+	top: 30px;
+}
+
+.meter-2	{
+	background: cyan;
+	height: 30px;
+	width: 0%;
+	position: absolute;
+	border-radius: 100px;
+	animation-name: meter;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-duration: 5s;
+}
+
+@keyframes meter{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 90%;
+	}
+}
+
+h2	{
+	position: absolute;
+}
+
+.meter2	{
+	background: white;
+	height: 30px;
+	width: 97.5%;
+	margin: 0 auto;
+	border-radius: 100px;
+	position: relative;
+	top: 65px;
+	left: -15px;
+}
+
+.meter2-2	{
+	background: green;
+	height: 30px;
+	width: 0%;
+	border-radius: 100px;
+	animation-name: meter2;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-duration: 5s;
+}
+
+@keyframes meter2{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 70%;
+	}
+}
+
+h2	{
+	position: absolute;
+}
+
+.meter3	{
+	background: white;
+	height: 30px;
+	width: 97.5%;
+	margin: 0 auto;
+	border-radius: 100px;
+	position: relative;
+	top: 100px;
+	left: -15px;
+}
+
+.meter3-2	{
+	background: red;
+	height: 30px;
+	width: 0%;
+	border-radius: 100px;
+	animation-name: meter3;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-duration: 5s;
+}
+
+@keyframes meter3{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 20%;
+	}
+}
+
+h2	{
+	margin-top: -30px;
+	margin-left: 10px;
+}
